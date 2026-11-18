@@ -34,6 +34,9 @@ if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', openMenu);
   closeButton.addEventListener('click', closeMenu);
   overlay.addEventListener('click', closeMenu);
+  navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
 
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
