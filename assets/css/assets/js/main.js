@@ -1,16 +1,46 @@
 
-// Mobile navigation
+// Mobile Side Drawer Navigation
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'menu-overlay';
+  document.body.appendChild(overlay);
 
-    menuToggle.setAttribute(
-      'aria-expanded',
-      navLinks.classList.contains('open')
-    );
+  // Create close button
+  const closeButton = document.createElement('button');
+  closeButton.className = 'menu-close';
+  closeButton.type = 'button';
+  closeButton.setAttribute('aria-label', 'Close menu');
+  closeButton.innerHTML = '&times;';
+  navLinks.prepend(closeButton);
+
+  function openMenu() {
+    navLinks.classList.add('open');
+    overlay.classList.add('show');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-active');
+  }
+
+  function closeMenu() {
+    navLinks.classList.remove('open');
+    overlay.classList.remove('show');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-active');
+  }
+
+  menuToggle.addEventListener('click', openMenu);
+  closeButton.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
   });
 }
 
@@ -31,8 +61,8 @@ if (searchInput) {
     const searchTerm = searchInput.value.toLowerCase();
 
     productCards.forEach(card => {
-      const productName = card.dataset.product.toLowerCase();
-      const category = card.dataset.category.toLowerCase();
+      const productName = (card.dataset.product || '').toLowerCase();
+      const category = (card.dataset.category || '').toLowerCase();
 
       card.hidden = !(
         productName.includes(searchTerm) ||
@@ -53,7 +83,7 @@ filterButtons.forEach(button => {
     const selectedCategory = button.dataset.filter;
 
     productCards.forEach(card => {
-      const category = card.dataset.category;
+      const category = card.dataset.category || '';
 
       card.hidden = !(
         selectedCategory === 'All' ||
