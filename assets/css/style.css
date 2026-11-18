@@ -1038,3 +1038,33 @@ a {
     display: block !important;
   }
 }
+
+/* MOBILE DRAWER LINKS VISIBILITY FIX */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    overflow-y: auto !important;
+  }
+
+  .nav-links a {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    color: #F7F3EA !important;
+    background: transparent !important;
+    font-size: 16px !important;
+    padding: 14px 16px !important;
+    min-height: 45px !important;
+    text-decoration: none !important;
+    z-index: 10002 !important;
+  }
+
+  .nav-links a.btn {
+    background: #087F83 !important;
+  }
+}
