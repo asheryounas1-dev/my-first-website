@@ -925,3 +925,153 @@ a {
   }
 }
 
+/* ======================================
+   PURPLE & WHITE PROFESSIONAL THEME
+   ====================================== */
+
+:root {
+  --purple: #6D28D9;
+  --deep-purple: #4C1D95;
+  --white: #FFFFFF;
+  --lavender: #F5F0FF;
+  --dark-text: #21152E;
+  --muted-text: #554B60;
+}
+
+/* Main website */
+body {
+  background: #FFFFFF;
+  color: #21152E;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-bottom: 1px solid #E5D9F5 !important;
+}
+
+/* Logo alignment */
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: #4C1D95 !important;
+  white-space: nowrap;
+}
+
+.logo-mark {
+  background: #6D28D9 !important;
+  color: #FFFFFF !important;
+  flex-shrink: 0;
+}
+
+.logo small {
+  color: #6D28D9 !important;
+}
+
+/* Desktop navigation */
+.nav-links a {
+  color: #21152E !important;
+  font-weight: 600 !important;
+}
+
+.nav-links a:hover {
+  color: #6D28D9 !important;
+}
+
+.nav-links a.btn,
+.btn {
+  background: #6D28D9 !important;
+  color: #FFFFFF !important;
+  border-color: #6D28D9 !important;
+}
+
+/* Headings and readable text */
+h1, h2, h3, h4, h5, h6 {
+  color: #21152E !important;
+}
+
+p, li, label, small {
+  color: #554B60;
+}
+
+/* Cards and content sections */
+.card,
+.menu-card,
+.faq-item,
+.info-card {
+  background-color: #FFFFFF;
+  border-color: #E5D9F5;
+}
+
+/* Buttons */
+button,
+.filter-btn {
+  cursor: pointer;
+}
+
+button:hover,
+.filter-btn.active {
+  background-color: #6D28D9;
+  color: #FFFFFF;
+}
+
+/* Mobile hamburger */
+.menu-toggle {
+  background: #6D28D9 !important;
+  border: none !important;
+  margin-left: auto !important;
+  flex-shrink: 0;
+  border-radius: 10px !important;
+}
+
+.menu-toggle span {
+  background: #FFFFFF !important;
+}
+
+/* Mobile side drawer */
+@media screen and (max-width: 850px) {
+
+  .navbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+  }
+
+  .logo {
+    min-width: 0;
+    gap: 8px !important;
+  }
+
+  .logo small {
+    display: block;
+  }
+
+  .menu-toggle {
+    margin-left: auto !important;
+    position: relative !important;
+    z-index: 10001 !important;
+  }
+
+  .nav-links {
+    background: #4C1D95 !important;
+    border-right: 1px solid #6D28D9 !important;
+  }
+
+  .nav-links a {
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.btn {
+    background: #6D28D9 !important;
+    color: #FFFFFF !important;
+  }
+
+  .menu-close {
+    background: #6D28D9 !important;
+    color: #FFFFFF !important;
+  }
+}
