@@ -1,4 +1,3 @@
-
 // Mobile Side Drawer Navigation
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -30,25 +29,16 @@ if (menuToggle && navLinks) {
   }
 
   menuToggle.addEventListener('click', () => {
-    if (navLinks.classList.contains('open')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
+    navLinks.classList.contains('open') ? closeMenu() : openMenu();
   });
 
   closeButton.addEventListener('click', closeMenu);
   overlay.addEventListener('click', closeMenu);
 
-  // Navigate to the selected page
   navLinks.addEventListener('click', event => {
     const link = event.target.closest('a');
-
     if (link && navLinks.contains(link)) {
-      event.preventDefault();
-      const destination = link.href;
       closeMenu();
-      window.location.assign(destination);
     }
   });
 
@@ -60,8 +50,7 @@ if (menuToggle && navLinks) {
 // FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', () => {
-    const item = question.closest('.faq-item');
-    item.classList.toggle('open');
+    question.closest('.faq-item').classList.toggle('open');
   });
 });
 
@@ -97,7 +86,6 @@ filterButtons.forEach(button => {
 
     productCards.forEach(card => {
       const category = card.dataset.category || '';
-
       card.hidden = !(
         selectedCategory === 'All' ||
         category === selectedCategory
