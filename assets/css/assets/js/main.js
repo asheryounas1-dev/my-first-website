@@ -4,12 +4,10 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle && navLinks) {
-  // Create overlay
   const overlay = document.createElement('div');
   overlay.className = 'menu-overlay';
   document.body.appendChild(overlay);
 
-  // Create close button
   const closeButton = document.createElement('button');
   closeButton.className = 'menu-close';
   closeButton.type = 'button';
@@ -31,15 +29,27 @@ if (menuToggle && navLinks) {
     document.body.classList.remove('menu-active');
   }
 
-  menuToggle.addEventListener('click', openMenu);
+  menuToggle.addEventListener('click', () => {
+    if (navLinks.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
   closeButton.addEventListener('click', closeMenu);
   overlay.addEventListener('click', closeMenu);
-  navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', closeMenu);
-});
 
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
+  // Navigate to the selected page
+  navLinks.addEventListener('click', event => {
+    const link = event.target.closest('a');
+
+    if (link && navLinks.contains(link)) {
+      event.preventDefault();
+      const destination = link.href;
+      closeMenu();
+      window.location.assign(destination);
+    }
   });
 
   document.addEventListener('keydown', event => {
@@ -47,7 +57,7 @@ if (menuToggle && navLinks) {
   });
 }
 
-// FAQ accordion
+// FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', () => {
     const item = question.closest('.faq-item');
@@ -55,7 +65,7 @@ document.querySelectorAll('.faq-question').forEach(question => {
   });
 });
 
-// Menu search
+// Menu Search
 const searchInput = document.querySelector('#menuSearch');
 const productCards = document.querySelectorAll('[data-product]');
 
@@ -75,7 +85,7 @@ if (searchInput) {
   });
 }
 
-// Menu category filters
+// Menu Category Filters
 const filterButtons = document.querySelectorAll('.filter-btn');
 
 filterButtons.forEach(button => {
