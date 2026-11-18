@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Molly Tea FAQs - Menu, Prices, Drinks & Ordering</title>
+  <meta name="description" content="Find answers to common questions about the Molly Tea menu, drink options, toppings, prices, ordering, and store locations.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .faq-intro {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .faq-group {
+      max-width: 850px;
+      margin: 45px auto 0;
+    }
+
+    .faq-group h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      color: #17372E;
+      margin: 35px 0 18px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e8e7df;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 22px;
+      background: transparent;
+      border: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      text-align: left;
+      color: #17372E;
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      font-size: 23px;
+      color: #C98270;
+      flex-shrink: 0;
+    }
+
+    .faq-answer {
+      padding: 0 22px 20px;
+      color: #626b65;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .faq-contact {
+      max-width: 850px;
+      margin: 55px auto 0;
+      padding: 35px;
+      border-radius: 18px;
+      background: #DCE7DD;
+      text-align: center;
+    }
+
+    .faq-contact h2 {
+      font-family: "Playfair Display", serif;
+      color: #17372E;
+      margin-top: 0;
+    }
+
+    .faq-contact p {
+      color: #52635a;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .faq-question {
+        padding: 17px;
+        font-size: 15px;
+      }
+
+      .faq-answer {
+        padding: 0 17px 17px;
+      }
+
+      .faq-contact {
+        padding: 25px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M</span>
+        <span>Molly Tea <small>MENU GUIDE</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="milk-tea.html">Milk Tea</a>
+        <a href="matcha.html">Matcha</a>
+        <a href="prices.html">Prices</a>
+        <a href="locations.html">Locations</a>
+        <a href="faq.html" aria-current="page">FAQs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container faq-intro">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / FAQs
+        </div>
+
+        <p class="eyebrow">HELP & INFORMATION</p>
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Have questions about the Molly Tea menu? Explore helpful answers
+          about drinks, toppings, prices, ordering, and store locations.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="faq-intro">
+          <p class="eyebrow">QUICK ANSWERS</p>
+          <h2>Everything You Need to Know</h2>
+          <p>
+            Browse the questions below to learn more about the Molly Tea
+            menu and how to explore available drink options.
+          </p>
+        </div>
+
+        <div class="faq-group">
+
+          <h2>General Questions</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is Molly Tea?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Molly Tea is a tea and beverage brand known for its tea-based
+              drinks. Customers can explore different drink categories,
+              flavors, and topping options depending on the store.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where can I find the Molly Tea menu?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              You can explore our <a href="menu.html">Molly Tea menu guide</a>
+              to learn about drink categories, including milk tea, matcha,
+              fruit tea, and other beverage options. Availability may vary
+              by location.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does every Molly Tea location have the same menu?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Not necessarily. Drink selections, seasonal items, toppings,
+              and availability may differ between locations. Check with
+              your local store for its current menu.
+            </div>
+          </div>
+
+          <h2>Drinks & Ingredients</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What types of drinks are available at Molly Tea?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Menu categories may include milk tea, matcha drinks, fruit tea,
+              iced tea, and specialty beverages. Visit our
+              <a href="menu.html">menu guide</a> for an overview.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does Molly Tea offer matcha drinks?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Matcha is one of the drink categories customers may look for.
+              Explore our <a href="matcha.html">Molly Tea matcha guide</a>
+              for more information. Specific drinks depend on store
+              availability.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are fruit tea drinks available?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Fruit tea is another beverage category to explore. Flavors
+              and available combinations can vary by store. See our
+              <a href="fruit-tea.html">fruit tea guide</a>.
+            </div>
+          </div>
+
+          <h2>Toppings & Customization</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What toppings can I add to my tea?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Topping options depend on the individual location. Check the
+              available choices when ordering. Our
+              <a href="toppings.html">Molly Tea toppings guide</a>
+              explains common topping categories.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I customize my drink?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Customization options depend on the store and drink.
+              Ask your local Molly Tea location about available sweetness,
+              ice, size, and topping choices.
+            </div>
+          </div>
+
+          <h2>Prices & Ordering</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How much do Molly Tea drinks cost?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Prices can vary depending on the drink, size, location,
+              and additional toppings. For current pricing, check with
+              your nearest store or explore our
+              <a href="prices.html">Molly Tea prices guide</a>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I order Molly Tea online?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Online ordering availability depends on the store and its
+              supported ordering services. Check your local location or
+              its official ordering page for current options.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does Molly Tea offer delivery?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Delivery availability may depend on your area and the
+              individual store. Check local delivery platforms or contact
+              the store directly.
+            </div>
+          </div>
+
+          <h2>Locations & Store Information</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I find a Molly Tea location near me?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              You can search for nearby stores using an online map or visit
+              our <a href="locations.html">Molly Tea locations guide</a>.
+              Confirm the address and opening hours before visiting.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I check store opening hours?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              Opening hours may differ by location and day. Check the
+              store's official listing or contact the location directly
+              before planning your visit.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="faq-contact">
+          <h2>Still Have Questions?</h2>
+          <p>
+            For the latest menu, prices, ingredients, and store information,
+            contact your nearest Molly Tea location or check its official
+            channels.
+          </p>
+          <a href="locations.html" class="btn">Explore Locations</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-mark">M</span>
+            <span>Molly Tea <small>MENU GUIDE</small></span>
+          </a>
+          <p>
+            An independent informational guide to Molly Tea drinks,
+            menu categories, prices, and locations.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <a href="menu.html">Full Menu</a>
+          <a href="milk-tea.html">Milk Tea</a>
+          <a href="matcha.html">Matcha</a>
+          <a href="fruit-tea.html">Fruit Tea</a>
+        </div>
+
+        <div>
+          <h3>Information</h3>
+          <a href="prices.html">Prices</a>
+          <a href="locations.html">Locations</a>
+          <a href="faq.html">FAQs</a>
+          <a href="about.html">About Us</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Molly Tea Menu Guide. All rights reserved.</p>
+        <p>
+          This is an independent informational website and is not
+          affiliated with or endorsed by Molly Tea.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isOpen));
+        answer.hidden = isOpen;
+        button.querySelector("span:last-child").textContent = isOpen ? "+" : "−";
+      });
+    });
+  </script>
+
+</body>
+</html>
