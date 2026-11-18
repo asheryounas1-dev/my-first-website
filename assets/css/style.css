@@ -602,3 +602,227 @@ footer a:hover {
     padding: 45px 0 35px;
   }
 }
+
+/* =========================================
+   MOLLY TEA - PREMIUM NAVY & TEAL THEME
+   ========================================= */
+
+:root {
+  --primary: #17243A;
+  --secondary: #087F83;
+  --accent: #E6B878;
+  --background: #F7F3EA;
+  --surface: #FFFFFF;
+  --coral: #D98270;
+  --text: #263448;
+  --muted: #687586;
+}
+
+/* Main website colors */
+body {
+  background: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.navbar,
+.topbar {
+  background: var(--primary) !important;
+}
+
+.logo,
+.logo span,
+.navbar .logo {
+  color: #FFFFFF !important;
+}
+
+.logo-mark {
+  background: var(--accent) !important;
+  color: var(--primary) !important;
+}
+
+/* Bigger and more professional navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px !important;
+}
+
+.nav-links a {
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding: 13px 15px !important;
+  border-radius: 9px !important;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  background: var(--secondary) !important;
+  color: #FFFFFF !important;
+}
+
+/* Main headings */
+h1, h2, h3 {
+  color: var(--primary) !important;
+}
+
+/* Hero and page headings */
+.hero,
+.page-hero {
+  background: var(--primary) !important;
+}
+
+.hero h1,
+.page-hero h1,
+.hero h2,
+.page-hero h2 {
+  color: #FFFFFF !important;
+}
+
+.hero p,
+.page-hero p {
+  color: #E6EAF0 !important;
+}
+
+/* Buttons */
+.btn,
+button.btn {
+  background: var(--secondary) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--secondary) !important;
+  border-radius: 9px !important;
+  font-weight: 700 !important;
+  transition: all 0.25s ease;
+}
+
+.btn:hover,
+button.btn:hover {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline {
+  background: transparent !important;
+  color: var(--secondary) !important;
+  border: 2px solid var(--secondary) !important;
+}
+
+/* Cards and content sections */
+.section-white,
+.card,
+.category-card,
+.product-card,
+.faq-item {
+  background: var(--surface) !important;
+}
+
+.category-card,
+.product-card,
+.faq-item,
+.about-value {
+  border-color: #E4DED2 !important;
+}
+
+/* Secondary backgrounds */
+.banner,
+.note,
+.about-note,
+.faq-contact,
+.disclaimer-highlight {
+  background: #E7EEE9 !important;
+}
+
+/* Links and interactive elements */
+a {
+  transition: color 0.2s ease;
+}
+
+.content a,
+.faq-answer a,
+.disclaimer-content a {
+  color: var(--secondary) !important;
+  font-weight: 600;
+}
+
+/* Eyebrow labels and accents */
+.eyebrow {
+  color: var(--coral) !important;
+}
+
+/* Filters and search */
+.filter-btn {
+  border: 1px solid var(--secondary) !important;
+  color: var(--secondary) !important;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--secondary) !important;
+  color: #FFFFFF !important;
+}
+
+.search-input {
+  border-color: #D8D2C6 !important;
+  border-radius: 10px !important;
+}
+
+/* FAQ */
+.faq-question {
+  color: var(--primary) !important;
+}
+
+.faq-question span:last-child {
+  color: var(--coral) !important;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary) !important;
+  color: #FFFFFF !important;
+}
+
+.footer h3,
+.footer p,
+.footer a,
+.footer .logo,
+.footer .logo span {
+  color: #FFFFFF !important;
+}
+
+.footer a:hover {
+  color: var(--accent) !important;
+}
+
+.footer-bottom {
+  border-color: #465267 !important;
+}
+
+/* Better mobile navigation */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 5px !important;
+  }
+
+  .nav-links a {
+    font-size: 14px !important;
+    padding: 11px 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links a {
+    display: block;
+    width: 100%;
+    font-size: 16px !important;
+    padding: 14px 16px !important;
+  }
+
+  .menu-toggle {
+    background: var(--secondary) !important;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    font-size: 22px !important;
+  }
+}
