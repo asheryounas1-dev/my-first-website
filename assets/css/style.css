@@ -948,7 +948,12 @@ a {
     font-size: 30px;
     cursor: pointer;
   }
-
+@media (max-width: 768px) {
+  .nav-links.open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
   body.menu-active {
     overflow: hidden;
   }
