@@ -1160,3 +1160,66 @@ header .nav-links a:active {
         -webkit-text-fill-color: #FFFFFF !important;
     }
 }
+/* ===== FINAL HEADER AND NAVIGATION FIX ===== */
+
+/* Desktop navigation page names */
+header.navbar .nav-links a,
+header.navbar .nav-links a:link,
+header.navbar .nav-links a:visited {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Header layout */
+header.navbar > .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 28px !important;
+}
+
+/* Molly Tea logo */
+header.navbar .logo {
+    flex-shrink: 0 !important;
+    margin-right: auto !important;
+}
+
+/* Hamburger button */
+header.navbar .menu-toggle {
+    flex-shrink: 0 !important;
+    margin-left: 20px !important;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 850px) {
+
+    header.navbar > .container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 20px !important;
+    }
+
+    header.navbar .logo {
+        margin-right: auto !important;
+    }
+
+    header.navbar .menu-toggle {
+        margin-left: 15px !important;
+        order: 2 !important;
+    }
+
+    header.navbar .nav-links {
+        order: 3 !important;
+    }
+
+    header.navbar .nav-links a,
+    header.navbar .nav-links a:link,
+    header.navbar .nav-links a:visited,
+    header.navbar .nav-links a:hover,
+    header.navbar .nav-links a:focus {
+        color: #FFFFFF !important;
+        -webkit-text-fill-color: #FFFFFF !important;
+    }
+}
