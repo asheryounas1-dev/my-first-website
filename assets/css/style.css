@@ -1095,3 +1095,17 @@ button:hover,
     z-index: 10002 !important;
   }
 }
+/* MOBILE DRAWER - WHITE PAGE NAMES */
+
+@media screen and (max-width: 850px) {
+  .nav-links a,
+  .nav-links a:visited,
+  .nav-links a:active {
+    color: #FFFFFF !important;
+  }
+
+  .nav-links a:hover {
+    color: #FFFFFF !important;
+    background: #6D28D9 !important;
+  }
+}
