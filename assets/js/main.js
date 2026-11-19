@@ -42,12 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
 
-    navLinks.addEventListener('click', event => {
-      const link = event.target.closest('a');
-      if (link && navLinks.contains(link)) {
-        closeMenu();
-      }
-    });
+   navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
 
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeMenu();
