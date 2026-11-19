@@ -1075,3 +1075,23 @@ button:hover,
     color: #FFFFFF !important;
   }
 }
+/* FIX: MOBILE DRAWER CLICK ISSUE */
+
+@media screen and (max-width: 850px) {
+  header {
+    position: sticky !important;
+    z-index: 10000 !important;
+  }
+
+  .menu-overlay {
+    z-index: 9998 !important;
+  }
+
+  .nav-links {
+    z-index: 10001 !important;
+  }
+
+  .menu-toggle {
+    z-index: 10002 !important;
+  }
+}
