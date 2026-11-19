@@ -1140,3 +1140,23 @@ header .nav-links a:active {
         -webkit-text-fill-color: #FFFFFF !important;
     }
 }
+/* WHITE NAVIGATION LINKS ON ALL DEVICES */
+
+header .nav-links a,
+header .nav-links a:link,
+header .nav-links a:visited,
+header .nav-links a:hover,
+header .nav-links a:focus,
+header .nav-links a:active {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 850px) {
+    header .nav-links a,
+    header .nav-links a:link,
+    header .nav-links a:visited {
+        color: #FFFFFF !important;
+        -webkit-text-fill-color: #FFFFFF !important;
+    }
+}
