@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
 
-   navLinks.querySelectorAll('a').forEach(link => {
+ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     closeMenu();
   });
