@@ -1109,3 +1109,14 @@ button:hover,
     background: #6D28D9 !important;
   }
 }
+@media screen and (max-width: 850px) {
+  header .nav-links a,
+  header .nav-links a:link,
+  header .nav-links a:visited,
+  header .nav-links a:hover,
+  header .nav-links a:focus,
+  header .nav-links a:active {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+  }
+}
